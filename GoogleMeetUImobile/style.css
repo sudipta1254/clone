@@ -63,6 +63,8 @@ h3 {
     margin: auto;
     width: 85%;
     height: 75%;
+    min-height: 500px;
+    max-height: 700px;
     text-align: center;
     /* border: 1px solid */
 }
@@ -94,6 +96,9 @@ h3 {
     border: 1px solid #000;
 }
 
+.mdf {
+    font-size: 32px;
+}
 span {
     cursor: pointer;
 }

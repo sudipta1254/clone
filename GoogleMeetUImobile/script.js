@@ -1,5 +1,6 @@
 $('.fa-solid').on('mouseenter', function () {
-    if (!$(this).attr('class').includes('-video'))
+    let cls = $(this).attr('class')
+    if (!(cls.includes('-video') || cls.includes('-menu'))
         $(this).removeClass('fa-solid').addClass('fa-regular')
 })
 .on('mouseleave', function () {

@@ -27,7 +27,7 @@ h3 {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: #ccc;
+    /* background: #ccc; */
 }
 
 #meeting {
@@ -71,9 +71,7 @@ h3 {
     margin: 20px auto;
     width: 150px;
     height: 150px;
-    background: #ccc;
     border-radius: 50%;
-    background-image: url(https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg);
 }
 
 #footer {

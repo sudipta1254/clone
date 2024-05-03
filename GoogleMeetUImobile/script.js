@@ -6,3 +6,5 @@ $('.fa-solid').on('mouseenter', function () {
 .on('mouseleave', function () {
     $(this).removeClass('fa-solid').addClass('fa-regular')
 })
+
+$('#data').css('height', innerHeight-180)

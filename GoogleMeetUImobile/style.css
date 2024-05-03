@@ -76,6 +76,26 @@ h3 {
     border-radius: 50%;
 }
 
+
+#dots {
+   display: flex;
+   margin: auto;
+   width: 25px;
+   justify-content: space-between;
+   //border: 1px solid
+}
+
+#dots div {
+   width: 8px;
+   height: 8px;
+   border-radius: 50px;
+   background: #ccc;
+}
+
+#dots div:first-child {
+   background: #0b57d0;
+}
+
 #footer {
     display: flex;
     justify-content: space-around;

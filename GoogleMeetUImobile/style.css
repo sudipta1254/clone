@@ -41,8 +41,7 @@ h2, h3 {
     justify-content: space-around;
 }
 
-#meet,
-#join {
+#meet, #join {
     display: flex;
     width: 165px;
     height: 40px;
@@ -86,14 +85,14 @@ h2, h3 {
 #dots {
    display: flex;
    margin: auto;
-   width: 25px;
+   width: 20px;
    justify-content: space-between;
    /* border: 1px solid */
 }
 
 #dots div {
-   width: 8px;
-   height: 8px;
+   width: 7px;
+   height: 7px;
    border-radius: 50px;
    background: #ccc;
 }
@@ -109,7 +108,7 @@ footer {
     width: 100%;
     max-width: var(--max-width);
     height: 45px;
-    background: #ddd;
+    background: #e9eff7;
 }
 
 #f-in {
@@ -131,9 +130,28 @@ footer {
     border: 1px solid #000;
 }
 
-#top .mdf {
+#top .md-menu {
+    font-size: 30px;
+}
+
+#f-in .mdf {
+    font-size: 26px;
+}
+
+#f-in .mdv {
     font-size: 32px;
 }
+
+#f-in .mdi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
 span {
     cursor: pointer;
 }

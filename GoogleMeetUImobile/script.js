@@ -24,4 +24,4 @@ $('.fa').on('mouseenter', function () {
         $(this).removeClass('material-icons').addClass('material-icons-outlined')
 }) */
 
-$('#data').css('height', innerHeight-180)
+$('main').css('height', innerHeight-55)

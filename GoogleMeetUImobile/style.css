@@ -22,7 +22,7 @@ main {
     align-items: center;
 }
 
-h2, h3 {
+h2 {
     margin: 0;
     font-weight: 400;
     font-style: normal;
@@ -38,12 +38,13 @@ h2, h3 {
 #meeting {
     margin: 20px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #meet, #join {
     display: flex;
-    width: 165px;
+    width: 40%;
+    min-width: 150px;
     height: 40px;
     border-radius: 50px;
     justify-content: center;
@@ -85,15 +86,15 @@ h2, h3 {
 #dots {
    display: flex;
    margin: auto;
-   width: 20px;
+   width: 22px;
    justify-content: space-between;
    /* border: 1px solid */
 }
 
 #dots div {
-   width: 7px;
-   height: 7px;
-   border-radius: 50px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
    background: #ccc;
 }
 
@@ -131,22 +132,26 @@ footer {
 }
 
 #top .md-menu {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #f-in .mdf {
-    font-size: 26px;
+    /* font-size: 25px; */
 }
 
 #f-in .mdv {
-    font-size: 32px;
+    font-size: 30px;
+}
+
+.md-meet {
+    background: #c4d8f3;
 }
 
 #f-in .mdi {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 65px;
     height: 30px;
     border-radius: 20px;
     transition: 0.3s;

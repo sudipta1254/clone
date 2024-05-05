@@ -1,26 +1,26 @@
 /* Change background of icons on hover */
-$('.mdi').on('mouseenter', function() {
+/* $('.mdi').on('mouseenter', function() {
     $(this).css('background', '#c4d8f3')
 })
 .on('mouseleave', function() {
     $(this).css('background', 'transparent')
-})
+}) */
 
 /* Change style of icons on click */
-$('.md-email').click(function() {
-    $(this).removeClass('material-icons-outlined').addClass('material-icons')
-    $('.md-chat').text('chat_bubble_outline')
-    $('.md-video').addClass('material-icons-outlined').removeClass('material-icons')
+$('.md-email').click(function () {
+    $(this).removeClass('material-icons-outlined').addClass('material-icons').css('background', '#c4d8f3')
+    $('.md-chat').text('chat_bubble_outline').css('background', 'transparent')
+    $('.md-meet').addClass('material-icons-outlined').removeClass('material-icons').css('background', 'transparent')
 })
-$('.md-chat').click(function() {
-    $('.md-email').addClass('material-icons-outlined').removeClass('material-icons')
-    $(this).text('chat_bubble')
-    $('.md-video').addClass('material-icons-outlined').removeClass('material-icons')
+$('.md-chat').click(function () {
+    $('.md-email').addClass('material-icons-outlined').removeClass('material-icons').css('background', 'transparent')
+    $(this).text('chat_bubble').css('background', '#c4d8f3')
+    $('.md-meet').addClass('material-icons-outlined').removeClass('material-icons').css('background', 'transparent')
 })
-$('.md-video').click(function() {
-    $('.md-email').addClass('material-icons-outlined').removeClass('material-icons')
-    $('.md-chat').text('chat_bubble_outline')
-    $(this).removeClass('material-icons-outlined').addClass('material-icons')
+$('.md-meet').click(function () {
+    $('.md-email').addClass('material-icons-outlined').removeClass('material-icons').css('background', 'transparent')
+    $('.md-chat').text('chat_bubble_outline').css('background', 'transparent')
+    $(this).removeClass('material-icons-outlined').addClass('material-icons').css('background', '#c4d8f3')
 })
 
 /* Fix the icon bar at the bottom of the page */

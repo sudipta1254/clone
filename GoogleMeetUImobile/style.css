@@ -35,7 +35,7 @@ main {
 }
 
 .searchbar div {
-    width: 150px;
+    width: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +45,10 @@ main {
 
 .searchbar img {
     margin: 5px 10px;
+}
+
+.searchbar .text {
+    font-size: 18px;
 }
 
 #top {
@@ -67,9 +71,39 @@ h2 {
     /* background: #ccc; */
 }
 
+#chat-data {
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+    height: 500px;
+    text-align: center;
+    /* border: 1px solid teal */
+}
+
+#chat-top-opt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red */
+}
+
+#chat-data #unread {
+    color: #00639c;
+    width: 90px;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
 #chat-options {
-    width: 310px;
+    /* position: relative; */
+    /* bottom: 55px; */
+    width: 300px;
     height: 55px;
+    margin: 10px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +111,7 @@ h2 {
 }
 
 #chat-options #d1 {
-    width: 250px;
+    width: 240px;
     height: 55px;
     display: flex;
     justify-content: space-around;
@@ -87,7 +121,7 @@ h2 {
     /* border: 1px solid teal; */
 }
 
-#chat-options #d1 div {
+#chat-options #d1 span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,9 +130,13 @@ h2 {
     border-radius: 50px;
 }
 
-#chat-options #d1 #home {
+.chat-home {
     color: #00639c;
     background: #c3e7ff;
+}
+
+#d1 span {
+    transition: 0.1s;
 }
 
 #chat-options #d2 {

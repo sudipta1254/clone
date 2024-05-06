@@ -72,10 +72,13 @@ h2 {
 }
 
 #chat-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: auto;
     width: 100%;
     max-width: 450px;
-    height: 500px;
+    height: 650px;
     text-align: center;
     /* border: 1px solid teal */
 }
@@ -96,6 +99,19 @@ h2 {
     align-items: center;
     border-radius: 10px;
     border: 1px solid #000;
+}
+
+#chat-opts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    margin: auto;
+    height: 75%;
+    min-height: 500px;
+    max-height: 700px;
+    text-align: center;
+    /* border: 1px solid  */
 }
 
 #chat-options {
@@ -151,6 +167,10 @@ h2 {
     /* border: 1px solid brown; */
 }
 
+.opt-dis {
+    display: none;
+}
+
 #meeting {
     margin: 20px auto;
     display: flex;
@@ -190,11 +210,15 @@ h2 {
     /* border: 1px solid */
 }
 
-#link-img {
+#link-img, .chat-img {
     margin: 20px auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+
+.chat-img {
+    border-radius: 0;
 }
 
 

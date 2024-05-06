@@ -32,8 +32,8 @@ $('.md-meet').click(function () {
     $(this).removeClass('material-icons-outlined').addClass('material-icons').css('background', '#c4d8f3')
 })
 
+
 $('.chat-home').click(function () {
-    $('#chat-text').text('Home')
     $('#d1 span').css({
         'color': 'black',
         'background': 'transparent'
@@ -45,9 +45,12 @@ $('.chat-home').click(function () {
         })
     $('.chat-qna').addClass('material-icons-outlined').removeClass('material-icons')
     $('.chat-groups').addClass('material-icons-outlined').removeClass('material-icons')
+
+    $('#chat-text').text('Home')
+    $('.opt-dis').hide()
+    $('.chat-opt1').show()
 })
 $('.chat-qna').click(function () {
-    $('#chat-text').text('Direct messages')
     $('#d1 span').css({
         'color': 'black',
         'background': 'transparent'
@@ -59,9 +62,12 @@ $('.chat-qna').click(function () {
         })
     $('.chat-home').addClass('material-symbols-sharp').removeClass('material-symbols-outlined')
     $('.chat-groups').addClass('material-icons-outlined').removeClass('material-icons')
+
+    $('#chat-text').text('Direct messages')
+    $('.chat-opt1, .chat-opt3, .chat-opt4').hide()
+    $('.chat-opt2').show()
 })
 $('.chat-groups').click(function () {
-    $('#chat-text').text('Spaces')
     $('#d1 span').css({
         'color': 'black',
         'background': 'transparent'
@@ -71,11 +77,14 @@ $('.chat-groups').click(function () {
             'color': '#00639c',
             'background': '#c3e7ff'
         })
-    $('.chat-home').addClass('material-symbols-sharp').removeClass('material-symbols-outline')
+    $('.chat-home').addClass('material-symbols-sharp').removeClass('material-symbols-outlined')
     $('.chat-qna').addClass('material-icons-outlined').removeClass('material-icons')
+
+    $('#chat-text').text('Spaces')
+    $('.chat-opt1, .chat-opt2, .chat-opt4').hide()
+    $('.chat-opt3').show()
 })
 $('.chat-more').click(function () {
-    $('#chat-text').text('More')
     $('#d1 span').css({
         'color': 'black',
         'background': 'transparent'
@@ -87,7 +96,12 @@ $('.chat-more').click(function () {
     $('.chat-home').addClass('material-symbols-sharp').removeClass('material-symbols-outlined')
     $('.chat-qna').addClass('material-icons-outlined').removeClass('material-icons')
     $('.chat-groups').addClass('material-icons-outlined').removeClass('material-icons')
+
+    $('#chat-text').text('More')
+    $('.chat-opt1, .chat-opt2, .chat-opt3').hide()
+    $('.chat-opt4').show()
 })
+
 
 /* Fix the icon bar at the bottom of the page */
 $('main').css('height', innerHeight - 55)
